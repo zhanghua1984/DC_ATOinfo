@@ -1,0 +1,292 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ATOINFO.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ATOINFO.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ATOINFO"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ATOINFO 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ATOINFO_DIALOG DIALOGEX 0, 0, 842, 494
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ATOINFO V1.0.1"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "串口: ",IDC_STATIC,13,23,23,8
+    COMBOBOX        IDC_COMBOCOMPORTNUMBER,42,19,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "关闭串口",IDC_BUTTONCOM,85,19,39,12
+    CONTROL         "",IDC_RICHEDITRX,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_NUMBER | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,27,65,217,408
+    COMBOBOX        IDC_COMBOMODE,160,19,70,123,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOTARGET,313,19,53,77,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOLOCAL,419,19,39,41,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "功能:",IDC_STATIC,135,23,23,8
+    LTEXT           "目标地址:",IDC_STATIC,268,23,38,8
+    LTEXT           "本机地址:",IDC_STATIC,377,23,37,8
+    LTEXT           "RX:",IDC_STATIC,29,49,15,8
+    EDITTEXT        IDC_EDITRX,49,49,72,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RICHEDITTX,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,252,
+                    65,217,408
+    LTEXT           "TX:",IDC_STATIC,253,50,15,8
+    CONTROL         "",IDC_RICHEDITDEBUGINFO,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,477,
+                    65,217,408
+    LTEXT           "解析帧:",IDC_STATIC,467,23,32,8
+    LTEXT           "解析数据位:",IDC_STATIC,555,23,46,8
+    COMBOBOX        IDC_COMBOFRAMESTYLE,504,19,39,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABIT,609,19,73,197,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DECDATA,616,45,69,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEXDATA,504,45,69,13,ES_AUTOHSCROLL
+    LTEXT           "HEX:",IDC_STATIC,481,47,17,8
+    LTEXT           "DEC:",IDC_STATIC,587,47,17,8
+    LTEXT           "D1:",IDC_STATIC,135,37,13,8
+    EDITTEXT        IDC_DATA1,159,37,27,12,ES_AUTOHSCROLL
+    LTEXT           "查看数据:",IDC_STATIC,700,21,49,8
+    EDITTEXT        IDC_EDITSEEDATAA1,731,33,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSEEDATAB,731,50,63,12,ES_AUTOHSCROLL
+    LTEXT           "数据A:",IDC_STATIC,699,36,31,8
+    LTEXT           "数据B:",IDC_STATIC,699,49,31,8
+    LTEXT           "数据A:",IDC_STATIC,701,83,31,8
+    COMBOBOX        IDC_COMBOFRAMESTYLEABYTE1,734,99,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "字节1:",IDC_STATIC,702,103,27,8
+    COMBOBOX        IDC_COMBODATABITABYTE1,781,99,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "字节2:",IDC_STATIC,702,121,27,8
+    LTEXT           "字节3:",IDC_STATIC,702,139,27,8
+    LTEXT           "字节4:",IDC_STATIC,702,157,27,8
+    COMBOBOX        IDC_COMBOFRAMESTYLEABYTE2,734,118,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFRAMESTYLEABYTE3,734,137,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFRAMESTYLEABYTE4,734,156,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITABYTE2,781,118,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITABYTE3,781,137,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITABYTE4,781,156,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据B:",IDC_STATIC,701,188,31,8
+    COMBOBOX        IDC_COMBOFRAMESTYLEBBYTE1,734,204,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "字节1:",IDC_STATIC,702,208,27,8
+    COMBOBOX        IDC_COMBODATABITBBYTE1,781,204,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "字节2:",IDC_STATIC,702,226,27,8
+    LTEXT           "字节3:",IDC_STATIC,702,244,27,8
+    LTEXT           "字节4:",IDC_STATIC,702,262,27,8
+    COMBOBOX        IDC_COMBOFRAMESTYLEBBYTE2,734,223,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFRAMESTYLEBBYTE3,734,242,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOFRAMESTYLEBBYTE4,734,261,39,72,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITBBYTE2,781,223,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITBBYTE3,781,242,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODATABITBBYTE4,781,261,41,197,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDITSEEDATAA2,747,33,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSEEDATAA3,763,33,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSEEDATAA4,779,33,16,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "Design for NI HENG JIANG\0"
+            VALUE "CompanyName", "北京大成通号轨道交通设备有限公司\0"
+            VALUE "FileDescription", "调试信息解析程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ATOINFO\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "DEBUG INFO\0"
+            VALUE "OriginalFilename", "ATOINFO.EXE\0"
+            VALUE "PrivateBuild", " 作者  张华\0"
+            VALUE "ProductName", "ATOINFO 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "Design by ZHANG HUA\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ATOINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 835
+        TOPMARGIN, 7
+        HORZGUIDE, 482
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ATOINFO(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ATOINFO.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

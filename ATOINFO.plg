@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ATOINFO - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ATOINFO.res" /d "NDEBUG" "E:\Project\大成源代码\ATOINFO\ATOINFO\ATOINFO.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4B9E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ATOINFO.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\大成源代码\ATOINFO\ATOINFO\ATOINFO.cpp"
+"E:\Project\大成源代码\ATOINFO\ATOINFO\ATOINFODlg.cpp"
+"E:\Project\大成源代码\ATOINFO\ATOINFO\COMPORT.CPP"
+"E:\Project\大成源代码\ATOINFO\ATOINFO\Includes.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4B9E.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4B9F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ATOINFO.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Project\大成源代码\ATOINFO\ATOINFO\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4B9F.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP4BA0.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ATOINFO.pdb" /machine:I386 /out:"Release/ATOINFO.exe" 
+".\Release\ATOINFO.obj"
+".\Release\ATOINFODlg.obj"
+".\Release\COMPORT.OBJ"
+".\Release\Includes.obj"
+".\Release\StdAfx.obj"
+".\Release\ATOINFO.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP4BA0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+e:\project\大成源代码\atoinfo\atoinfo\release\msado15.tlh(479) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+ATOINFO.cpp
+ATOINFODlg.cpp
+COMPORT.CPP
+Includes.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+Creating command line "bscmake.exe /nologo /o"Release/ATOINFO.bsc"  ".\Release\StdAfx.sbr" ".\Release\ATOINFO.sbr" ".\Release\ATOINFODlg.sbr" ".\Release\COMPORT.SBR" ".\Release\Includes.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ATOINFO.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>
